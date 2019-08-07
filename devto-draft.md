@@ -13,7 +13,7 @@ I slowly and surely learned the basics. On how state management worked. Or how t
 
 Eventually, I started my first development job. They used Vue. I didn't know anything about this framework, and it felt like I had to learn javascript all over again.
 
-These are the things that I had to learn, transitioning from React to Vue
+This intense but interesting new journey where I transitioned from React to Vue left me with the following valuable lessons that I want to share with you.
 
 ## Styling and Syntax
 
