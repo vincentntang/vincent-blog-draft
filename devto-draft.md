@@ -238,6 +238,8 @@ Namely using something called `Vue.set()`.
 
 A common example of when you would use this is if your loading data from the backend. And need to create new data to send back.
 
+Another concept is if you
+
 ## Key Values
 
 Whenever you iterate through and create several child components, Vue/React need to uniquely identify each item.
@@ -275,9 +277,9 @@ Methods are like any function in javascript. The return statement is totally opt
 ## Asynchronous Gotchas
 
 This is a gotcha that you find out later in Vue, and in React. 
-In React, there is a built in method called `setState()`. When `setState()` gets called, it gets handled asynchronously in the background.
+In React, there is a built-in method called `setState()`. When `setState()` gets called, it gets handled asynchronously in the background.
 
-Vue is no different, you have a method called `Vue.nextTick()` that awaits the latest update value to the data.
+Vue is no different, you have a method called `Vue.nextTick()` that awaits the latest updated value to the data.
 
 One lesson I learned is that it's best to set local variables within your methods, and only mutate data attributes as needed.
 
@@ -295,9 +297,9 @@ Lifecycle methods describe what components do during their lifetime.
 
 Here are common ones you'll use in Vue:
 
-- mounted() - Similar to React's componentDidMount. This generally when making an axios/fetch call to initialize data in your component from a backend.
+- mounted() - Similar to React's componentDidMount. This generally when making an Axios/fetch call to initialize data in your component from a backend.
 - updated() - Similar to React's componentDidUpdate. When you update data through your components, you want to send a POST request to your backend to keep things in sync
-- destroyed() - Similar to React's componentWillUnmount. You don't need to use this, but it helps cleanup leftover event listeners.
+- destroyed() - Similar to React's componentWillUnmount. You don't need to use this, but it helps clean up leftover event listeners.
 
 ## Hooks
 
@@ -307,30 +309,30 @@ Vue has no equivalent to hooks, although there is an RFC at the time of writing 
 
 ## Directives
 
-Vue's built in directives make development a breeze. You could create iterable directives right inside your HTML.
+Vue's built-in directives make development a breeze. You could create iterable directives right inside your HTML.
 
 In React, this often meant making another component called "group(s)" and maybe one called "group".
 
 Vue, you can just dump the `v-for`, `v-if` etc right inside your HTML. Your logic coherently just makes sense looking at it.
 
-Alternatively, you can write your own directives! This let's you attach functionality to page page if necessary, making it easier to develop faster
+Alternatively, you can write your own directives! This lets you attach functionality to page if necessary, making it easier to develop faster
 
-One great use case for startups, is to develop a reporting system. If a user clicks on a feature that doesn't yet exist, you can add a popup modal saying "Sorry we're working hard on this new feature! Come back later". In the background, you can make axios request to notify users really do want that feature.
+One great use case for startups is to develop a reporting system. If a user clicks on a feature that doesn't yet exist, you can add a popup modal saying "Sorry we're working hard on this new feature! Come back later". In the background, you can make Axios request to notify users really do want that feature.
 
 ## Mixins
 
-Some companies swear by these. It's a reusable code snippet library that can be implemented across multiple components. React out of the box does not have such a feature, you can alternative use callback functions instead that are made globally available
+Some companies swear by these. It's a reusable code snippet library that can be implemented across multiple components. React out of the box does not have such a feature, you can alternatively use callback functions instead that are made globally available
 
 ## Emitting Events
 
-Props are passed from parent to child component, via one way data binding. To handle business logic at the parent level, from the child component, you generally emit events.
+Props are passed from parent to child component, via one-way data binding. To handle business logic at the parent level, from the child component, you generally emit events.
 
 With Vue, there are two different ways.
 
 1. You can pass a reference to the function from parent to child
-2. Emit an event from child and capture the response in parent
+2. Emit an event from the child and capture the response in parent
 
-Most applications generally use #2. Example from a button that triggers a method in parent component
+Most applications generally use #2. Example from a button that triggers a method in the parent component
 
 ```vue
 <!-- Parent Component -->
@@ -367,7 +369,7 @@ Most applications generally use #2. Example from a button that triggers a method
 
 Vue's CLI comes with the ability to add Vuex out of the box.  
 
-In React you pass a new set of state using `setState()`, Redux only extends this through global dispatches / flux architecture.
+In React you pass a new set of state using `setState()`, Redux only extends this through global dispatches/flux architecture.
 
 In Vue, you mutate objects behind the scene. Vuex is no different but at the global level. 
 
@@ -377,14 +379,14 @@ Vue natively ships with the ability to create a global event bus, which is simil
 
 Learning Vue has been a great way to learn new programming paradigms.
 
-Many principlces in React translate over to Vue. There are a few things that differ, namely:
+Many principles in React translate over to Vue. There are a few things that differ, namely:
 
 - You don't replace your state, you mutate it. There's data reactivity / async gotchas from these
-- New functionality. There's computed properties, watchers, mixins, etc that don't exist in React out of the box
+- New functionality. There are computed properties, watchers, mixins, etc that don't exist in React out of the box
 - You write HTML and styles the way you would traditionally in a regular index.html page
 - PropTypes are enforced in Vue, it's optional in React
 
-These are the some of the differences from React to Vue. Some things that are similar include:
+These are some of the differences from React to Vue. Some things that are similar include:
 
 - Lifecycle methods
 - Props/State
