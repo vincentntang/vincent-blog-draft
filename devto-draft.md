@@ -7,7 +7,7 @@ tags:
 
 React. The first major JavaScript framework I decided to learn coming from jQuery land.
 
-My journey learning was painful. I had to watch 3 different Udemy tutorials to finally get it. Months were spent wrapping my head around this foreign way of coding.
+My journey learning it was painful. I had to watch three different Udemy tutorials to finally get it. Months were spent wrapping my head around this foreign way of coding.
 
 I slowly and surely learned the basics. On how state management worked. Or how the React lifecycle operated. These things came with time, and eventually, I learned to use this knowledge to build apps featured in hackathons. And things I would use in my daily life.
 
