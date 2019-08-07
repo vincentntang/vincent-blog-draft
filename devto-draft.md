@@ -5,7 +5,7 @@ description:
 tags:
 ---
 
-React. The first major javascript framework I decided to learn to come from jQuery land.
+React. The first major JavaScript framework I decided to learn coming from jQuery land.
 
 My journey learning was painful. I had to watch 3 different Udemy tutorials to finally get it. Months were spent wrapping my head around this foreign way of coding.
 
